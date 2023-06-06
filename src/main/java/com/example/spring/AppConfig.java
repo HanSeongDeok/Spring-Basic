@@ -18,7 +18,6 @@ public class AppConfig {
     public MemberService memberService(){
         return new MemberServiceImpl(getMemberRepository());
     }
-
     /**
      * Order 에 사용될 저장소와 할인 정책 설정
      * @return
@@ -32,7 +31,6 @@ public class AppConfig {
     public MemberRepository getMemberRepository() {
         return new MemoryMemberRepository();
     }
-
     /**
      * 고정 할인 정책
      * @return
@@ -41,7 +39,6 @@ public class AppConfig {
     public DiscountPolicy fixDiscountPolicy() {
         return new FixDiscountPolicy();
     }
-
     /**
      * 비율 할인 정책
      * @return
